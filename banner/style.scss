@@ -249,15 +249,17 @@ body>div[class^="banner_"] {
             top: 16px;
             bottom: 76px;
         }
-        p {display: inline;}
-        p.crossed {
-            position: absolute;
-            width: 52px;
-            height: 0px;
-            left: 55px;
-            top: calc(45% - 0px/2 + 13px);
-            &.black {
-                border: 1px solid var(--color-black--2)
+        p {
+            display: inline;
+            &.line {
+                position: absolute;
+                width: 52px;
+                height: 0px;
+                left: 55px;
+                top: calc(45% - 0px/2 + 13px);
+                &.black {
+                    border: 1px solid var(--color-black--2)
+                }
             }
         }
         strong.yellow {
