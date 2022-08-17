@@ -1,0 +1,268 @@
+
+$breakpoint-width: 768px;
+* {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    border: 0;
+}
+body {
+    padding: 64px;
+}
+body>div[class^="banner_"] {
+    margin:64px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+:root {
+    --color-orange: #FF7E4A;
+    --color-white: #ffffff;
+    --color-grey: #868686;
+    --color-black: #212121;
+    --color-grey--2: #939393;
+    --color-yellow: #F7B100;
+    --color-black--2: #101010;
+}
+.banner_01 {
+    position: relative;
+    width: 672px;
+    height: 80px;
+    @media only screen and (max-width: $breakpoint-width) {
+        width: 264px;
+        height: 152px;
+    }
+    .adv {
+        position: absolute;
+        width: 63px;
+        height: 20px;
+        right: 0px;
+        top: -28px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        /* identical to box height, or 167% */
+        text-align: right;
+        @media only screen and (max-width: $breakpoint-width) {
+            top: -24px
+        }
+    }
+    .grey {
+        color: var(--color-grey);
+    }
+    .black {
+        color: var(--color-black);
+    }
+    .button {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-width) {
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &.button_orange {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 32px;
+            position: absolute;
+            width: 156px;
+            height: 44px;
+            right: 24px;
+            top: calc(50% - 44px/2);
+            &.orange {
+                background-color: var(--color-orange);
+            }
+            &.button_shadow {
+                box-shadow: 0px 6px 10px rgba(16, 17, 19, 0.1);
+                border-radius: 22px;
+                @media only screen and (max-width: $breakpoint-width) {
+                    border-radius: 20px;
+                }
+            }
+            &.white { color: var(--color-white)}
+            @media only screen and (max-width: $breakpoint-width) {
+                padding: 10px 32px;
+                width: 145px;
+                height: 40px;
+                left: calc(50% - 145px/2 + 0.5px);
+                top: 92px;
+            }
+        }
+        &.button_text {
+            width: 92px;
+            height: 20px;
+            text-decoration: none;
+            @media only screen and (max-width: $breakpoint-width) {
+                width: 81px;
+            }
+        }
+    }
+    &.white {
+        background: var(--color-white);
+    }
+    .text {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        position: absolute;
+        height: 48px;
+        left: 24px;
+        right: 204px;
+        top: calc(50% - 48px/2);
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        @media only screen and (max-width: $breakpoint-width) {
+            font-size: 14px;
+            line-height: 20px;
+            left: 20px;
+            right: 20px;
+            top: 16px;
+            bottom: 76px;
+        }
+        span.crossed {
+            text-decoration: line-through
+        }
+        strong.orange {
+            color: var(--color-orange)
+        }
+        
+    }
+}
+.banner_02 {
+    box-sizing: border-box;
+    position: relative;
+    width: 640px;
+    height: 80px;
+    border: 1px solid #E5E8EC;
+    border-radius: 16px;
+    @media only screen and (max-width: $breakpoint-width) {
+        width: 264px;
+        height: 152px;
+    }
+    .adv {
+        position: absolute;
+        width: 60px;
+        height: 20px;
+        right: 0px;
+        top: 88px;
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: right;
+        @media only screen and (max-width: $breakpoint-width) {
+            top: -24px
+        }
+    }
+    .grey {
+        color: var(--color-grey--2);
+    }
+    .black {
+        color: var(--color-black--2);
+    }
+    .button {
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height, or 125% */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @media only screen and (max-width: $breakpoint-width) {
+            font-size: 14px;
+            line-height: 20px;
+            /* identical to box height, or 143% */
+        }
+        &.button_yellow {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 14px 36px;
+            position: absolute;
+            width: 159px;
+            height: 48px;
+            right: 24px;
+            top: calc(50% - 48px/2);
+            &.button_shadow {
+                box-shadow: 0px 6px 10px rgba(16, 17, 19, 0.1);
+                border-radius: 22px;
+                @media only screen and (max-width: $breakpoint-width) {
+                    border-radius: 20px;
+                }
+            }
+            &.yellow {
+                background-color: var(--color-yellow);
+                border-radius: 8px;
+            }
+            &.white { color: var(--color-white)}
+            @media only screen and (max-width: $breakpoint-width) {
+                padding: 10px 32px;
+                width: 145px;
+                height: 40px;
+                left: calc(50% - 145px/2 + 0.5px);
+                top: 92px;
+            }
+        }
+        &.button_text {
+            width: 87px;
+            height: 20px;
+            text-decoration: none;
+            @media only screen and (max-width: $breakpoint-width) {
+                width: 81px;
+            }
+        }
+    }
+    &.white {
+        background: var(--color-white);
+    }
+    .text {
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        position: absolute;
+        height: 48px;
+        left: 24px;
+        right: 203px;
+        top: calc(50% - 48px/2);
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        @media only screen and (max-width: $breakpoint-width) {
+            font-size: 14px;
+            line-height: 20px;
+            left: 20px;
+            right: 20px;
+            top: 16px;
+            bottom: 76px;
+        }
+        p {display: inline;}
+        p.crossed {
+            position: absolute;
+            width: 52px;
+            height: 0px;
+            left: 55px;
+            top: calc(25% - 0px/2 + 13px);
+            &.black {
+                border: 1px solid var(--color-black--2)
+            }
+        }
+        strong.yellow {
+            color: var(--color-yellow)
+        }
+        
+    }
+}
