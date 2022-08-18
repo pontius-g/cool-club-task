@@ -1,0 +1,22 @@
+{
+  "name": "cool-club-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass banner/style.scss -o banner/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontius-g/cool-club-test.git"
+  },
+  "author": "pontius",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pontius-g/cool-club-test/issues"
+  },
+  "homepage": "https://github.com/pontius-g/cool-club-test#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
