@@ -7,6 +7,7 @@ $breakpoint-width: 768px;
 }
 body {
     padding: 64px;
+    background-color: #123;
 }
 body>div[class^="banner_"] {
     margin:64px;
@@ -145,8 +146,9 @@ body>div[class^="banner_"] {
     border: 1px solid #E5E8EC;
     border-radius: 16px;
     @media only screen and (max-width: $breakpoint-width) {
-        width: 264px;
-        height: 152px;
+        width: 296px;
+        height: 148px;
+        border-radius: 8px;
     }
     .adv {
         position: absolute;
@@ -161,7 +163,7 @@ body>div[class^="banner_"] {
         line-height: 20px;
         text-align: right;
         @media only screen and (max-width: $breakpoint-width) {
-            top: -24px
+            top: 152px;
         }
     }
     .grey {
@@ -195,24 +197,17 @@ body>div[class^="banner_"] {
             height: 48px;
             right: 24px;
             top: calc(50% - 48px/2);
-            &.button_shadow {
-                box-shadow: 0px 6px 10px rgba(16, 17, 19, 0.1);
-                border-radius: 22px;
-                @media only screen and (max-width: $breakpoint-width) {
-                    border-radius: 20px;
-                }
-            }
             &.yellow {
                 background-color: var(--color-yellow);
                 border-radius: 8px;
             }
             &.white { color: var(--color-white)}
             @media only screen and (max-width: $breakpoint-width) {
-                padding: 10px 32px;
-                width: 145px;
-                height: 40px;
-                left: calc(50% - 145px/2 + 0.5px);
-                top: 92px;
+                padding: 8px 24px;
+                width: 124px;
+                height: 36px;
+                left: calc(50% - 124px/2);
+                top: 96px;
             }
         }
         &.button_text {
@@ -220,7 +215,7 @@ body>div[class^="banner_"] {
             height: 20px;
             text-decoration: none;
             @media only screen and (max-width: $breakpoint-width) {
-                width: 81px;
+                width: 76px;
             }
         }
     }
@@ -242,12 +237,11 @@ body>div[class^="banner_"] {
         font-size: 16px;
         line-height: 24px;
         @media only screen and (max-width: $breakpoint-width) {
-            font-size: 14px;
-            line-height: 20px;
-            left: 20px;
-            right: 20px;
+            height: 72px;
+            left: 12px;
+            right: 12px;
             top: 16px;
-            bottom: 76px;
+            text-align: center;
         }
         p {
             display: inline;
@@ -257,6 +251,12 @@ body>div[class^="banner_"] {
                 height: 0px;
                 left: 55px;
                 top: calc(45% - 0px/2 + 13px);
+                @media only screen and (max-width: $breakpoint-width) {
+                    width: 51px;
+                    height: 0px;
+                    left: 101px;
+                    top: 59px;
+                }
                 &.black {
                     border: 1px solid var(--color-black--2)
                 }
