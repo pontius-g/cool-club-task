@@ -178,14 +178,12 @@ body>div[class^="banner_"] {
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
-        /* identical to box height, or 125% */
         display: flex;
         align-items: center;
         text-align: center;
         @media only screen and (max-width: $breakpoint-width) {
             font-size: 14px;
             line-height: 20px;
-            /* identical to box height, or 143% */
         }
         &.button_yellow {
             display: flex;
