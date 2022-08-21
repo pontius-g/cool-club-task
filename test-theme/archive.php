@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 
 	<main>
-
+		<?php
+			if (!is_tax('category') && !is_tax('tag')) {
+				$ps_term=get_queried_object();
+				print('<h1>This is Taxonomy Term '.$ps_term->name.' from '.get_taxonomy($ps_term->taxonomy)->singular_label.' Taxonomy</h1><p>'.$ps_term->description.'</p>');
+			}
+		?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php while ( have_posts() ) : ?>
